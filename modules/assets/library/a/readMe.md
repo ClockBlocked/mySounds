@@ -1,0 +1,1 @@
+Will soon be populating this directory with an organized glossary of Artist / Album / Song metadata
