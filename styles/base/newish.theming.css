@@ -1,0 +1,131 @@
+/*
+
+These variables are newer in the sense that there are more Variables than in the 
+other file, "theming.css", THOUGH the Variety of Color Schemes within that other 
+CSS File is ALSO what i am wanting;  So manh many additions will be needed ( more variables ),
+PLUS more Color Schemes.  The output should be however many Color Schemes is present in 
+the file "theming.css", with each Color Scheme consisting of however many Variables (items)
+are present in both Color Schemes in THIS File.
+
+
+Confusing as hell;
+I do apologize!!
+
+*/
+
+
+
+:root {
+  --theme-transition: background 1.2s ease, color 0.8s ease, box-shadow 1s ease, border-color 0.8s ease;
+}
+
+[data-theme="dark"] {
+  --bgNav: 76 85 103;
+  --borderNavs: 101 113 136;
+  --bgBreadcrumbs: 85 94 114;
+
+  --bgLists: #141420;
+  --RGBA_bgLists: 20 20 32;
+
+  --bgBody: 53 59 69;
+  --bgOthers: 40 44 52;
+  --bgCard: 44 49 60;
+  --bgPopups: 53 59 69;
+  --bgButtons: 62 68 81;
+
+  --textPrimary: 171 178 191;
+  --textSecondary: 130 137 151;
+  --textOthers: 92 99 112;
+
+  --borderPrimary: 59 64 77;
+  --borderSubtle: 47 51 61;
+  --borderHover: var(--textPrimary);
+  --borderActive: var(--textPrimary);
+
+  --colorPurple: 198 120 221;
+  --colorPink: 232 102 141;
+  --colorOrange: 224 108 117;
+  --colorRed: 224 108 117;
+
+  --buttonPrimary: 198 120 221;
+  --buttonPrimaryHover: 212 145 232;
+  --buttonSecondary: 232 102 141;
+  --buttonSecondaryHover: 240 132 166;
+  --buttonTertiary: 224 108 117;
+  --buttonTertiaryHover: 236 138 146;
+  --buttonActive: 172 96 196;
+
+  --shadowPrimary: 0 0 0;
+  --shadowPrimaryAlpha: 0.4;
+  --shadowHeavy: 0 0 0;
+  --shadowHeavyAlpha: 0.6;
+  --overlayBg: 0 0 0;
+  --overlayAlpha: 0.5;
+
+  --playerBgPrimary: 33 37 43;
+  --playerBgSecondary: 40 44 52;
+  --playerAccent: 224 108 117;
+
+  --gradientAccent: linear-gradient(135deg, rgba(var(--colorPurple)), rgba(var(--colorPink)));
+  --gradientPlayer: linear-gradient(135deg, rgba(var(--playerBgPrimary)), rgba(var(--playerBgSecondary)));
+
+  --vinylDark: 44 49 60;
+  --vinylMid: 36 40 48;
+  --vinylDeep: 30 33 40;
+  --vinylBg: 24 27 33;
+}
+
+[data-theme="light"] {
+  --bgNav: 210 218 232;
+  --borderNavs: 180 190 208;
+  --bgBreadcrumbs: 218 225 237;
+
+  --bgLists: #E4E9F2;
+
+  --bgBody: 224 230 240;
+  --bgOthers: 232 237 245;
+  --bgCard: 218 225 237;
+  --bgPopups: 205 214 230;
+  --bgButtons: 195 205 224;
+
+  --textPrimary: 22 28 40;
+  --textSecondary: 58 68 92;
+  --textOthers: 118 128 152;
+
+  --borderPrimary: 178 190 212;
+  --borderSubtle: 200 209 226;
+  --borderHover: var(--textPrimary);
+  --borderActive: var(--textPrimary);
+
+  --colorPurple: 85 130 210;
+  --colorPink: 145 115 200;
+  --colorOrange: 245 135 85;
+  --colorRed: 200 75 60;
+
+  --buttonPrimary: 85 130 210;
+  --buttonPrimaryHover: 65 108 188;
+  --buttonSecondary: 145 115 200;
+  --buttonSecondaryHover: 122 92 178;
+  --buttonTertiary: 245 135 85;
+  --buttonTertiaryHover: 225 112 62;
+  --buttonActive: 55 92 168;
+
+  --shadowPrimary: 0 0 0;
+  --shadowPrimaryAlpha: 0.03;
+  --shadowHeavy: 0 0 0;
+  --shadowHeavyAlpha: 0.06;
+  --overlayBg: 0 0 0;
+  --overlayAlpha: 0.1;
+
+  --playerBgPrimary: 210 219 236;
+  --playerBgSecondary: 195 206 226;
+  --playerAccent: 85 130 210;
+
+  --gradientAccent: linear-gradient(135deg, rgba(var(--colorPurple)), rgba(var(--colorPink)));
+  --gradientPlayer: linear-gradient(135deg, rgba(var(--playerBgPrimary)), rgba(var(--playerBgSecondary)));
+
+  --vinylDark: 195 205 225;
+  --vinylMid: 165 178 200;
+  --vinylDeep: 148 160 185;
+  --vinylBg: 210 219 235;
+}
