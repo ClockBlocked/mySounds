@@ -1,0 +1,141 @@
+
+
+
+/*
+/////////////////////////////  D A R K  Themes  //////
+//////////////////////////////////////////////////////
+*/
+[data-theme="dark"] {
+  --bgBody: 26 30 35;
+  --bgCard: 37 42 49;
+  --bgCardHeader: 48 54 63;
+  --bgPopups: 42 48 57;
+  --bgNavs: 31 35 42;
+  --bgButtons: 52 58 68;
+  --bgHovers: 61 69 81;
+
+  --borderPrimary: 67 74 85;
+  --borderSecondary: 84 93 107;
+  --borderSubtle: 50 56 66;
+
+  --textPrimary: 228 232 238;
+  --textSecondary: 173 181 193;
+  --textOthers: 118 128 143;
+
+  --colorBlue: 98 150 219;
+  --colorRed: 214 98 98;
+  --colorGreen: 112 172 135;
+  --colorOrange: 214 161 110;
+  --colorPurple: 163 134 199;
+
+  --playerBgPrimary: 28 33 39;
+  --playerBgSecondary: 37 43 50;
+}
+
+[data-theme="midnight"] {
+--bgBody: 14 17 22;
+--bgCard: 23 27 35;
+--bgCardHeader: 31 37 47;
+--bgPopups: 30 36 46;
+--bgNavs: 18 22 29;
+--bgButtons: 38 45 56;
+--bgHovers: 48 56 69;
+
+--borderPrimary: 56 66 82;
+--borderSecondary: 70 81 98;
+
+--textPrimary: 229 233 239;
+--textSecondary: 164 175 192;
+--textOthers: 108 122 143;
+
+--colorBlue: 92 141 194;
+--colorRed: 194 97 102;
+--colorGreen: 96 150 123;
+--colorOrange: 194 148 102;
+--colorPurple: 146 122 184;
+}
+
+[data-theme="graphite"] {
+--bgBody: 30 30 31;
+--bgCard: 41 41 43;
+--bgCardHeader: 50 50 52;
+--bgPopups: 48 48 50;
+--bgNavs: 34 34 36;
+--bgButtons: 60 60 62;
+--bgHovers: 72 72 75;
+
+--borderPrimary: 84 84 87;
+--borderSecondary: 104 104 108;
+
+--textPrimary: 229 229 230;
+--textSecondary: 181 181 183;
+--textOthers: 130 130 133;
+}
+
+[data-theme="forest"] {
+--bgBody: 22 28 25;
+--bgCard: 33 41 36;
+--bgCardHeader: 43 52 46;
+--bgPopups: 40 48 43;
+--bgNavs: 27 34 30;
+--bgButtons: 52 63 56;
+--bgHovers: 64 76 68;
+
+--borderPrimary: 70 84 75;
+
+--textPrimary: 226 232 226;
+--textSecondary: 167 180 168;
+--textOthers: 115 129 118;
+
+--colorGreen: 109 168 129;
+--colorBlue: 107 149 172;
+}
+
+
+
+
+
+
+
+
+
+/*
+/////////////////////////////  L I G H T  Themes  ////
+//////////////////////////////////////////////////////
+*/
+[data-theme="light"] {
+--bgBody: 239 242 246;
+--bgCard: 249 250 252;
+--bgCardHeader: 238 242 247;
+--bgPopups: 250 251 253;
+--bgNavs: 230 236 243;
+--bgButtons: 221 228 236;
+--bgHovers: 210 219 229;
+
+--borderPrimary: 196 205 217;
+--borderSecondary: 214 222 232;
+
+--textPrimary: 31 39 48;
+--textSecondary: 82 94 109;
+--textOthers: 121 133 148;
+
+--colorBlue: 88 121 170;
+--colorRed: 176 88 88;
+--colorGreen: 89 136 106;
+--colorOrange: 184 133 89;
+--colorPurple: 116 108 143;
+}
+
+[data-theme="paper"] {
+--bgBody: 243 240 234;
+--bgCard: 250 248 244;
+--bgCardHeader: 239 235 229;
+--bgNavs: 231 227 220;
+--bgButtons: 219 214 206;
+
+--textPrimary: 48 44 40;
+--textSecondary: 92 86 80;
+--textOthers: 135 128 120;
+
+--borderPrimary: 203 196 186;
+}
