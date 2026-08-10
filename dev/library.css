@@ -1,0 +1,62 @@
+/* ============================================================================
+   pages/library.css
+   Library page — artist stacks + artist-page layout scaffolding
+   ============================================================================ */
+
+
+/* ===== 1. LIBRARY PAGE ===== */
+[data-page="library"] .stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+[data-page="library"] .head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+[data-page="library"] .head .avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-page="library"] .head:hover .avatar {
+  transform: scale(1.1);
+}
+
+[data-page="library"] .head .name {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+[data-page="library"] .head:hover .name {
+  text-decoration: underline;
+}
+
+[data-page="library"] .head .sub {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(var(--textSecondary));
+}
+
+
+/* ===== 2. ARTIST PAGE LAYOUT ===== */
+.artist-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
