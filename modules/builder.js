@@ -1,4 +1,9 @@
-const App = window.App || {};
+
+
+
+
+
+window.App = window.App || {};
 
 App.Builder = {
     // --- HOME PAGE ---
