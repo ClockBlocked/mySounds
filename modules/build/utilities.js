@@ -1,6 +1,0 @@
-/**
-*
-*  Helper functions & such here
-*
-*
-**/
