@@ -1,4 +1,10 @@
-const App = window.App || {};
+
+
+
+
+
+window.App = window.App || {};
+
 
 App.State = {
     currentUser: { id: "u1", name: "Guest" },
