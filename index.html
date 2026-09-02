@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunkgem UI - Advanced Replica</title>
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+<link rel="stylesheet" href="./styles.css" />
+
+
+
+	<body>
+
+<!-- The Thin Loading Progress Bar (Tailwind Style) -->
+<div id="progress-bar"></div>
+
+<div class="app-container">
+    <!-- Left Sidebar (Added data-route attributes for Navigator.js) -->
+    <aside class="sidebar">
+        <div>
+            <div class="logo"><i class="fa-solid fa-circle-notch logo-icon"></i> Lunkgem</div>
+            
+            <div class="menu-title">Menu</div>
+            <div class="menu-item active" data-route="discover"><i class="fa-solid fa-compass"></i> Explore</div>
+            <div class="menu-item" data-route="albums"><i class="fa-solid fa-layer-group"></i> Albums</div>
+            <div class="menu-item" data-route="genres"><i class="fa-solid fa-music"></i> Genres</div>
+            <div class="menu-item" data-route="artist"><i class="fa-solid fa-user"></i> Artist</div>
+
+            <div class="menu-title">Library</div>
+            <div class="menu-item" data-route="recent"><i class="fa-solid fa-clock-rotate-left"></i> Recent</div>
+            <div class="menu-item" data-route="playlist"><i class="fa-solid fa-list"></i> Playlist</div>
+            <div class="menu-item" data-route="favorites"><i class="fa-solid fa-heart"></i> Favorites</div>
+            <div class="menu-item" data-route="local"><i class="fa-solid fa-folder"></i> Local</div>
+
+            <div class="menu-title">Setting</div>
+            <div class="menu-item" data-route="account"><i class="fa-solid fa-user-gear"></i> Account</div>
+            <div class="menu-item" data-route="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</div>
+        </div>
+        
+        <div class="homepod-container">
+            <div class="homepod-icon-box"><i class="fa-brands fa-google"></i></div>
+            <p style="font-size: 13px; margin-bottom: 5px;">Google Homepod</p>
+            <button class="connect-btn"><i class="fa-solid fa-link"></i> Connect</button>
+        </div>
+    </aside>
+
+    <!-- Main Content (Wrapped in Views for Show/Hide) -->
+    <main class="main-content">
+        <div class="top-nav">
+            <div class="nav-tabs">
+                <div class="nav-tab active">Music</div>
+                <div class="nav-tab">Podcast</div>
+                <div class="nav-tab">Live</div>
+                <div class="nav-tab">Radio</div>
+            </div>
+            <div class="top-icons">
+                <i class="fa-regular fa-comment-dots"></i>
+                <i class="fa-regular fa-bell"></i>
+                <div class="profile-circle"></div>
+            </div>
+        </div>
+
+        <!-- DEFAULT VIEW: Discover -->
+        <div id="view-discover" class="view">
+            <h1 class="page-title">Discover</h1>
+
+            <div class="hero-card">
+                <div class="hero-left">
+                    <p class="hero-sub">Trending New Hits</p>
+                    <h1 class="hero-title">Happier Than Ever</h1>
+                    <p class="hero-meta">Billie Eilish &nbsp; 127 million plays</p>
+                    <div style="display: flex; align-items: center;">
+                        <button class="btn-play"><i class="fa-solid fa-play"></i> Play Now</button>
+                        <button class="btn-like"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <!-- Placeholder for Billie Eilish image -->
+                <div class="hero-image-bg"></div>
+            </div>
+
+            <div class="section-header">
+                <h2>Top Artist</h2>
+                <span class="show-all">Show All</span>
+            </div>
+            <div class="artists-grid">
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Billie Eilish</div></div>
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Dewa 19</div></div>
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Sam Smith</div></div>
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Eminem</div></div>
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Charlie Puth</div></div>
+                <div class="artist-card"><div class="artist-img"></div><div class="artist-name">Yura Yunita</div></div>
+            </div>
+
+            <div class="section-header">
+                <h2>Top Hits</h2>
+            </div>
+            <div class="hit-row">
+                <span class="hit-num">#1</span>
+                <div class="hit-img"></div>
+                <span class="hit-title">Happier Than Ever</span>
+                <span class="hit-artist">Billie Eilish</span>
+                <span class="hit-time">05:11</span>
+                <i class="fa-solid fa-heart hit-heart active"></i>
+            </div>
+            <div class="hit-row">
+                <span class="hit-num">#2</span>
+                <div class="hit-img"></div>
+                <span class="hit-title">Juliette</span>
+                <span class="hit-artist">Dewa 19 Ft. Ello</span>
+                <span class="hit-time">04:42</span>
+                <i class="fa-regular fa-heart hit-heart"></i>
+            </div>
+        </div>
+
+        <!-- HIDDEN VIEW: Albums (Populated by Builder.js) -->
+        <div id="view-albums" class="view" style="display:none;"></div>
+        
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="right-sidebar">
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search library...">
+        </div>
+
+        <div class="lib-tabs">
+            <div class="lib-tab active">Playlist</div>
+            <div class="lib-tab">Artist</div>
+            <span class="lib-recent">Recent</span>
+        </div>
+
+        <div class="playlist-item">
+            <div class="pl-img"></div>
+            <div class="pl-info"><h4>Dewa 19 Pt. Virzha</h4><p>Artist</p></div>
+            <i class="fa-solid fa-chevron-right pl-arrow"></i>
+        </div>
+        <div class="playlist-item">
+            <div class="pl-img"></div>
+            <div class="pl-info"><h4>Sad Playlist</h4><p>Playlist by Mamad</p></div>
+            <i class="fa-solid fa-chevron-right pl-arrow"></i>
+        </div>
+        <div class="playlist-item">
+            <div class="pl-img"></div>
+            <div class="pl-info"><h4>Rex Orange County</h4><p>Artist</p></div>
+            <i class="fa-solid fa-chevron-right pl-arrow"></i>
+        </div>
+        <div class="playlist-item">
+            <div class="pl-img"></div>
+            <div class="pl-info"><h4>Dr. Dre Ft. Snoop Dogg</h4><p>Artist</p></div>
+            <i class="fa-solid fa-chevron-right pl-arrow"></i>
+        </div>
+
+        <div class="now-card">
+            <div class="now-card-img"></div>
+            <div class="now-card-title">Happier Than Ever</div>
+            <div class="now-card-artist">Billie Eilish</div>
+            <i class="fa-solid fa-heart now-card-heart"></i>
+        </div>
+    </aside>
+</div>
+
+<!-- Bottom Player Bar -->
+<div class="player-bar">
+    <div class="player-controls">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-play play-btn"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-repeat"></i>
+    </div>
+    
+    <div class="progress-container">
+        <div class="progress-bg">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+    
+    <div class="player-right">
+        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./modules/dependencies.js"></script>
+<script src="./modules/global.js"></script>
+<script src="./modules/modules/builder.js"></script>
+<script src="./modules/navigator.js"></script>
+
+</body>
+</html>  
