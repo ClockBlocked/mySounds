@@ -20,7 +20,7 @@ App.Utils = {
 App.Data = {
     fetchAll(callback) {
         $.ajax({
-            url: './metadata.json',
+            url: 'modules/metadata.json',
             method: 'GET',
             dataType: 'json',
             success: function(data) { callback(data); },
